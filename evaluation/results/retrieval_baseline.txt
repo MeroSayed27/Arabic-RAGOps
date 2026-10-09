@@ -1,0 +1,94 @@
+Arabic-RAGOps — Semantic Retrieval Baseline
+
+Test date: 2026-10-06
+
+Status:
+PASS
+
+Embedding model:
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+Embedding dimensions:
+384
+
+Knowledge source:
+data/sample/rag_basics.md
+
+Chunking:
+chunk_size = 300
+overlap = 60
+
+Retrieval method:
+In-memory vector search
+
+Similarity:
+Dot product over normalized embeddings
+
+Indexed chunks:
+5
+
+Test queries:
+
+1. Arabic
+Query:
+ما هو نظام RAG؟
+
+Top result:
+rag_basics_chunk_000
+
+Score:
+0.5896
+
+Result:
+PASS — the relevant RAG explanation was ranked first.
+
+
+2. English
+Query:
+What is a RAG system?
+
+Top result:
+rag_basics_chunk_000
+
+Score:
+0.6254
+
+Result:
+PASS — the relevant RAG explanation was ranked first.
+
+
+3. Arabic + English
+Query:
+ما هو دور retrieval في RAG؟
+
+Top result:
+rag_basics_chunk_000
+
+Score:
+0.6591
+
+Result:
+PASS — the relevant RAG explanation was ranked first.
+
+
+Important observations:
+- Arabic queries successfully retrieved relevant evidence.
+- English queries successfully retrieved relevant evidence.
+- Mixed Arabic/English queries successfully retrieved relevant evidence.
+- The same semantic knowledge can be retrieved across languages.
+- The retrieval system currently uses a simple in-memory vector index.
+- This is a baseline, not yet a complete production RAG system.
+
+Next evaluation goal:
+Measure retrieval quality formally using an evaluation dataset
+and metrics such as Recall@K and MRR.
+
+Terminal note:
+Arabic characters may appear as boxes in some Windows CMD
+configurations. This is a display/rendering issue and is not
+treated as evidence of corrupted UTF-8 data.
+
+Hugging Face note:
+The model generated an unauthenticated Hub warning, but the
+required model weights loaded successfully and the retrieval
+tests completed successfully.

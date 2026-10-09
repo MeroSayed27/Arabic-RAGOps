@@ -1,0 +1,30 @@
+Arabic-RAGOps — Document Ingestion Baseline
+============================================
+
+Document:
+data/sample/rag_basics.md
+
+Document ID:
+rag_basics
+
+Detected language:
+mixed
+
+Character count:
+1095
+
+Status:
+PASS
+
+Verified capabilities:
+- Local Markdown document loading
+- UTF-8 text reading
+- Document ID creation
+- Title extraction
+- Source tracking
+- Basic Arabic/English language detection
+- Structured Document object creation
+
+Result:
+The ingestion layer successfully converted the sample knowledge
+document into the project's normalized Document structure.

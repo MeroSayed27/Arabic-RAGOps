@@ -1,0 +1,63 @@
+Arabic-RAGOps — BM25 Retrieval Baseline
+
+Test date:
+2026-10-07
+
+Status:
+PASS
+
+Indexed chunks:
+5
+
+Queries tested:
+
+1. Arabic
+Query:
+ما هو نظام RAG؟
+
+Top result:
+rag_basics_chunk_001
+
+Score:
+2.0522
+
+Result:
+PASS
+
+
+2. English
+Query:
+What is a RAG system?
+
+Top result:
+rag_basics_chunk_000
+
+Score:
+2.2113
+
+Result:
+PASS
+
+
+3. Mixed Arabic + English
+Query:
+ما هو دور retrieval في RAG؟
+
+Top result:
+rag_basics_chunk_001
+
+Score:
+1.7361
+
+Result:
+PASS
+
+Observations:
+- BM25 successfully retrieved relevant chunks for Arabic queries.
+- BM25 successfully retrieved relevant chunks for English queries.
+- BM25 successfully handled a mixed-language query.
+- BM25 and dense retrieval may rank different chunks first.
+- This creates a useful baseline for hybrid retrieval.
+
+Next goal:
+Combine dense retrieval and BM25 into hybrid retrieval.

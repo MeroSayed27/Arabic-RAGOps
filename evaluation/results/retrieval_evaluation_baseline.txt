@@ -1,0 +1,67 @@
+Arabic-RAGOps — Retrieval Evaluation Baseline
+
+Test date:
+2026-10-07
+
+Status:
+PASS
+
+Questions:
+6
+
+Indexed chunks:
+5
+
+Embedding model:
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+Chunking:
+chunk_size = 300
+overlap = 60
+
+Results:
+
+q001 — Arabic
+Recall@1: 1.0000
+Recall@3: 1.0000
+Reciprocal Rank: 1.0000
+
+q002 — English
+Recall@1: 1.0000
+Recall@3: 1.0000
+Reciprocal Rank: 1.0000
+
+q003 — Mixed
+Recall@1: 1.0000
+Recall@3: 1.0000
+Reciprocal Rank: 1.0000
+
+q004 — Arabic
+Recall@1: 0.0000
+Recall@3: 1.0000
+Reciprocal Rank: 0.5000
+
+q005 — English
+Recall@1: 1.0000
+Recall@3: 1.0000
+Reciprocal Rank: 1.0000
+
+q006 — Mixed
+Recall@1: 1.0000
+Recall@3: 1.0000
+Reciprocal Rank: 1.0000
+
+Overall:
+Mean Recall@1: 0.8333
+Mean Recall@3: 1.0000
+MRR: 0.9167
+
+Observation:
+The dense baseline retrieves an expected chunk within the top 3
+for all six evaluation questions. One Arabic question did not
+place an expected chunk at rank 1, which gives us a useful baseline
+for the upcoming BM25 and hybrid-retrieval comparison.
+
+Hugging Face note:
+The model loaded successfully. The unauthenticated Hub warning
+did not prevent evaluation.

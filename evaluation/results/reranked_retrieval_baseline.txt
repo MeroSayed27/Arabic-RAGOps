@@ -1,0 +1,22 @@
+Arabic-RAGOps — Reranked Retrieval Evaluation
+
+Evaluation questions: 6
+Reranker: BAAI/bge-reranker-v2-m3
+Pipeline: Hybrid Retrieval → Reranker
+
+Corrected overall metrics:
+Recall@1: 0.2500
+Recall@3: 1.0000
+MRR: 0.7500
+
+Conclusion:
+All expected chunks were found within the top 3 results
+for these six questions.
+
+Recall@1 is 0.2500, so the reranker needs improvement
+in placing relevant chunks first.
+
+MRR is 0.7500, showing the first relevant result is
+often ranked near the top.
+
+These are preliminary results from a small evaluation set.

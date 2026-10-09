@@ -1,0 +1,37 @@
+Arabic-RAGOps — Hybrid Retrieval Evaluation
+
+Test date:
+2026-10-07
+
+Fusion method:
+Weighted normalized-score fusion
+
+Weights:
+Dense = 0.7
+BM25 = 0.3
+
+Questions:
+6
+
+Overall Metrics:
+Mean Recall@1: 0.8333
+Mean Recall@3: 1.0000
+MRR: 0.9167
+
+Comparison with Dense baseline:
+Dense Recall@1: 0.8333
+Dense Recall@3: 1.0000
+Dense MRR: 0.9167
+
+Conclusion:
+The new score-normalized hybrid fusion matches the dense
+baseline on all three overall retrieval metrics.
+
+The previous RRF-based hybrid scored lower:
+Recall@1: 0.5000
+Recall@3: 1.0000
+MRR: 0.6944
+
+This experiment shows that score normalization substantially
+improved the first hybrid design on the current evaluation set.
+It does not yet demonstrate an improvement over Dense Retrieval.

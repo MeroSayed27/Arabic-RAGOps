@@ -1,0 +1,45 @@
+Arabic-RAGOps — Hybrid Weight Tuning
+
+Test date:
+2026-10-07
+
+Results:
+
+Dense=1.0, BM25=0.0
+Recall@1: 0.8333
+Recall@3: 1.0000
+MRR: 0.9167
+
+Dense=0.9, BM25=0.1
+Recall@1: 0.5000
+Recall@3: 1.0000
+MRR: 0.6944
+
+Dense=0.8, BM25=0.2
+Recall@1: 0.5000
+Recall@3: 1.0000
+MRR: 0.6944
+
+Dense=0.7, BM25=0.3
+Recall@1: 0.5000
+Recall@3: 1.0000
+MRR: 0.6944
+
+Dense=0.6, BM25=0.4
+Recall@1: 0.5000
+Recall@3: 1.0000
+MRR: 0.6944
+
+Dense=0.5, BM25=0.5
+Recall@1: 0.5000
+Recall@3: 1.0000
+MRR: 0.6944
+
+Conclusion:
+The current weighted RRF approach does not improve over
+the dense baseline. Dense-only remains the strongest result
+on the current evaluation dataset.
+
+Next goal:
+Improve the fusion method itself rather than continuing
+to guess weight values.

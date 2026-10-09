@@ -1,0 +1,29 @@
+Arabic-RAGOps — Retrieval Method Comparison
+
+Evaluation questions: 6
+Metrics: Corrected Recall@K and MRR
+
+Dense Retrieval
+Recall@1: 0.6667
+Recall@3: 0.7500
+MRR: 0.9167
+
+BM25 Retrieval
+Recall@1: 0.4167
+Recall@3: 0.6667
+MRR: 0.6667
+
+Hybrid Retrieval
+Recall@1: 0.6667
+Recall@3: 1.0000
+MRR: 0.9167
+
+Conclusion:
+Dense and Hybrid have the same Recall@1 and MRR.
+Hybrid has higher Recall@3, reaching 1.0000.
+
+This means Hybrid found all expected chunks within
+the top three results for this small evaluation set.
+
+These are preliminary results from six questions,
+not a guarantee of performance on other datasets.

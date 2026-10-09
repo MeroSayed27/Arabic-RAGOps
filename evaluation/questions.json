@@ -1,0 +1,38 @@
+[
+  {
+    "id": "q001",
+    "language": "ar",
+    "question": "ما هو نظام RAG؟",
+    "expected_chunks": ["rag_basics_chunk_000"]
+  },
+  {
+    "id": "q002",
+    "language": "en",
+    "question": "What is a RAG system?",
+    "expected_chunks": ["rag_basics_chunk_000"]
+  },
+  {
+    "id": "q003",
+    "language": "mixed",
+    "question": "ما هو RAG system؟",
+    "expected_chunks": ["rag_basics_chunk_000"]
+  },
+  {
+    "id": "q004",
+    "language": "ar",
+    "question": "ما هي الخطوات الأساسية لنظام RAG؟",
+    "expected_chunks": ["rag_basics_chunk_001", "rag_basics_chunk_002"]
+  },
+  {
+    "id": "q005",
+    "language": "en",
+    "question": "Why are citations important in a RAG system?",
+    "expected_chunks": ["rag_basics_chunk_002", "rag_basics_chunk_003"]
+  },
+  {
+    "id": "q006",
+    "language": "mixed",
+    "question": "لماذا citations مهمة في RAG؟",
+    "expected_chunks": ["rag_basics_chunk_002", "rag_basics_chunk_003"]
+  }
+]

@@ -1,0 +1,35 @@
+Arabic-RAGOps — Embedding Baseline Result
+==========================================
+
+Model:
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+Test date:
+2026-10-05
+
+Results:
+
+Arabic
+------
+Text: ما هو نظام RAG؟
+Dimensions: 384
+First 5 values:
+[-0.0919465497136116, -0.002304280176758766, -0.009969313628971577, -0.052122898399829865, -0.027096739038825035]
+
+English
+-------
+Text: What is a RAG system?
+Dimensions: 384
+First 5 values:
+[-0.10813398659229279, -0.0038348578382283455, -0.0034139719791710377, -0.07321956753730774, -0.05505802482366562]
+
+Mixed Arabic/English
+--------------------
+Text: ما هو RAG system؟
+Dimensions: 384
+First 5 values:
+[-0.09532193839550018, -0.0032877863850444555, -0.0008939256658777595, -0.07131683826446533, -0.04230324923992157]
+
+Conclusion:
+The embedding pipeline successfully converted Arabic, English,
+and mixed-language queries into 384-dimensional vectors.

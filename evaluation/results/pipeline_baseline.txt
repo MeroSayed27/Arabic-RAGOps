@@ -1,0 +1,39 @@
+Arabic-RAGOps — Ingestion → Chunking Pipeline Baseline
+
+Test date: 2026-10-05
+Status: PASS
+
+Source:
+data/sample/rag_basics.md
+
+Document language:
+mixed
+
+Document characters:
+1095
+
+Chunking configuration:
+chunk_size = 300
+overlap = 60
+
+Total chunks:
+5
+
+Verified behavior:
+- The sample Markdown document loads successfully.
+- Arabic and English text are preserved in the document.
+- The document is detected as mixed-language content.
+- The chunker creates overlapping chunks.
+- Chunk identifiers and character ranges are generated.
+- The ingestion → chunking pipeline completes successfully.
+
+Important terminal note:
+Arabic characters may appear incorrectly or as boxes in some Windows CMD configurations.
+This does not mean the underlying text is corrupted.
+The project uses UTF-8 for reading and storing text, and terminal rendering is treated separately from data integrity.
+
+Pipeline:
+Document → Loader → Normalized Document → Chunker → Text Chunks
+
+Result:
+PASS — ingestion and chunking baseline verified.

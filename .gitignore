@@ -1,18 +1,36 @@
-.venv/
+# Python
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.ipynb_checkpoints/
+*.so
 
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment secrets
 .env
 .env.*
 !.env.example
 
-.vscode/
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
 
-data/raw/
-data/private/
-data/processed/
-
-evaluation/results/
+# Logs
 *.log
+
+# Model and data caches
+.cache/
+.huggingface/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Private screenshots
+Screenshot_*.png
+appcrowdgen_completed_*.png

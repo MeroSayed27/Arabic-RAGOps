@@ -1,0 +1,26 @@
+Arabic-RAGOps — Chunking Baseline
+=================================
+
+Test configuration:
+Chunk size: 120 characters
+Overlap: 30 characters
+
+Input:
+Synthetic multilingual RAG text
+
+Result:
+Total chunks: 3
+
+Verified capabilities:
+- Text splitting
+- Overlapping chunks
+- Stable chunk IDs
+- Start/end positions
+- Chunk text preservation
+
+Status:
+PASS
+
+Conclusion:
+The baseline chunking layer successfully converts text into
+overlapping retrieval-ready chunks.

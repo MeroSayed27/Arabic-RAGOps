@@ -1,0 +1,34 @@
+Arabic-RAGOps — Reranker Baseline
+
+Test date:
+2026-10-08
+
+Status:
+PASS
+
+Model:
+BAAI/bge-reranker-v2-m3
+
+Query:
+ما هو نظام RAG؟
+
+Results:
+
+1. rag_basics_chunk_001
+Score: 0.9964
+
+2. rag_basics_chunk_000
+Score: 0.9202
+
+3. rag_basics_chunk_002
+Score: 0.8797
+
+Observation:
+The multilingual cross-encoder reranker successfully scored
+and ranked the candidate chunks.
+
+The Windows Hugging Face symlink warning is only a caching
+warning and did not prevent the model from loading.
+
+Next goal:
+Connect reranking after hybrid retrieval.

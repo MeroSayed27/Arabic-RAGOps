@@ -1,0 +1,36 @@
+# Core NLP / Embeddings
+sentence-transformers
+transformers
+torch
+
+# Sparse / Hybrid Retrieval
+rank-bm25
+
+# Vector Database / Retrieval Infrastructure
+qdrant-client
+
+# LLM / Online Model APIs
+openai
+
+# Configuration / Environment
+python-dotenv
+
+# Document Ingestion
+pypdf
+beautifulsoup4
+pandas
+
+# API / Application Layer
+fastapi
+uvicorn
+
+# Evaluation / Testing
+scikit-learn
+pytest
+
+# Tokenization / Cost Analysis
+tiktoken
+
+# Notebook / Experimentation
+jupyter
+ipykernel
